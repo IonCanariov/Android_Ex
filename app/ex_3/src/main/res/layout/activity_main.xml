@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#510C3585"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/acme"
+        android:text="@string/text_view2"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstNumber"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="453dp"
+        android:ems="10"
+        android:hint="@string/text_view3"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <EditText
+        android:id="@+id/secondNumber"
+        android:layout_width="216dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/text_view4"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNumber" />
+
+    <ImageButton
+        android:id="@+id/resultButton"
+        android:layout_width="97dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/result_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumber"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="232dp"
+        android:background="#E6DDDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumber" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="307dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="40dp"
+        android:background="#124307"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#193A55"
+            android:onClick="onFirstButtonClicked"
+            android:text="@string/button1"
+            app:strokeWidth="2sp" />
+
+        <Button
+            android:id="@+id/secondButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="1"
+            android:backgroundTint="#192A88"
+            android:onClick="onSecondButtonClicked"
+            android:text="@string/button2"
+            app:strokeWidth="2sp" />
+        <!--   strokeWidth-is for setting the width of a border on shapes   -->
+        <!--   margins is the space around an element's border-->
+        <!--    use "transparent" to make backround of view/image buttons transparent-->
+        <Button
+            android:id="@+id/thirdButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#B63D16"
+            android:onClick="onThirdButtonClicked"
+            android:text="@string/button3"
+            app:strokeWidth="1sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/textField"
+        android:layout_width="212dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:inputType="textAutoCorrect"
+        android:text="@string/textField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

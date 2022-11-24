@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Exercises</string>
+    <string name="button_here">Click here</string>
+    <string name="text_view1">Dont click the button unless you want to buy something!</string>
+    <string name="text_view2">Calculator</string>
+    <string name="text_view3">Number 1</string>
+    <string name="text_view4">Number 2</string>
+    <string name="result_button">result</string>
+    <string name="just_view">just text</string>
+    <string name="button1">First</string>
+    <string name="button2">Second</string>
+    <string name="button3">Third</string>
+    <string name="button4">Go Back</string>
+    <string name="textField">insert text</string>
+</resources>
