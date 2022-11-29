@@ -92,5 +92,6 @@ private Button button_second;
         btn.setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
         Toast.makeText(this,text,Toast.LENGTH_SHORT).show();
                 //context shows where the toast will be displayed, in this case it will be displayed in this view;
+        //Add more here
     }
 }
